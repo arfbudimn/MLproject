@@ -205,3 +205,32 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# === Custom Project Ignores (Student Performance ML App) ===
+
+# Ignore CatBoost logs and training artifacts
+catboost_info/
+*.tfevents
+*.tsv
+*.json
+
+# Ignore data and notebooks
+Data/
+data.csv
+train.csv
+test.csv
+notebook/
+*.ipynb
+
+# Ignore temporary model artifacts (optional)
+# Hapus tanda # jika kamu tidak ingin model.pkl ikut ke AWS
+# model.pkl
+# preprocessor.pkl
+
+# Ignore local logs
+logs/
+*.log
+
+# Ignore IDE and OS specific files
+.DS_Store
+Thumbs.db
